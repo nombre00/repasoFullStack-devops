@@ -8,13 +8,13 @@ jobs:
         runs-on: ubuntu-latest
         steps:
             - name: obtener y chechear el repositorio
-                uses: action/checkout@v4
+              uses: actions/checkout@v4
             
             - name: configurar java
-                uses: actions/setup-java@v2
-                with: 
+              uses: actions/setup-java@v2
+              with: 
                     java-version: '17'
                     distribution: 'temurin'
             
             - name: test java
-                run: mvn test
+              run: mvn test
