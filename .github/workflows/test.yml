@@ -17,4 +17,6 @@ jobs:
                     distribution: 'temurin'
             
             - name: test java
-              run: mvn test
+              run: |
+                cd ejemploJava
+                mvn test
