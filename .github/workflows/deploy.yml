@@ -33,7 +33,7 @@ jobs:
                 remote_port: ${{ secrets.PORT }}  # Puerto SSH (si es distinto del predeterminado 22)
 
 
-            - name: Levantar docker-compose 
+            - name: Levantar docker-compose # ahora si
               uses: appleboy/ssh-action@v1
               with:
                 host: ${{ secrets.IP_SERVER }}
